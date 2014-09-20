@@ -26,7 +26,6 @@ public class Euler2 {
   };
 
   public static void main(String[] args) {
-    final Iterable<Integer> iterable = () -> Fib;
     final IntStream fibStream = StreamSupport.intStream(Spliterators.spliteratorUnknownSize(Fib, 0), false);
 
     final int sum = fibStream
