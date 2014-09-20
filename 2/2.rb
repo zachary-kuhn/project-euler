@@ -6,4 +6,4 @@ fib = Enumerator.new do |yielder|
   end
 end
 
-puts fib.lazy.take_while { |n| n < 4000000 }.select { |n| n % 2 == 0 }.reduce(:+)
+puts fib.lazy.take_while { |n| n <= 4000000 }.select { |n| n % 2 == 0 }.reduce(:+)

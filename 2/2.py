@@ -9,7 +9,7 @@ fib_generator = fib()
 total = 0
 i = next(fib_generator)
 
-while i < 4000000:
+while i <= 4000000:
   if i % 2 == 0:
     total = total + i
 

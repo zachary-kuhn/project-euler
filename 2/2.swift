@@ -15,7 +15,7 @@ let evenFibonacci = lazyFib.filter { $0 % 2 == 0 }
 var sum = 0
 
 for i in evenFibonacci {
-    if i >= 4_000_000 {
+    if i > 4_000_000 {
         break;
     }
     

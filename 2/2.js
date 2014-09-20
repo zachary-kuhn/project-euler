@@ -14,7 +14,7 @@ var i = 0,
     total = 0;
 
 for (i of fibonacci()) {
-  if (i >= 4000000) break;
+  if (i > 4000000) break;
 
   if (i % 2 === 0) {
     total = total + i;
